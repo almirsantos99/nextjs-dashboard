@@ -1,0 +1,32 @@
+.header {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 51px;
+        padding-bottom: 91px;
+    }
+    
+    .transaction_button {
+        background-color: var(--color-primarylighter);
+        color: var(--color-gray);
+    }
+
+    @media (max-width: 640px){
+        .header_wrapper {
+            flex-direction: column;
+            padding-bottom: 51px;
+        }
+
+        .header_logo {
+            align-self: center;
+        }
+
+        .transaction_button {
+            margin-top: 24px;
+        }
+    }
+}

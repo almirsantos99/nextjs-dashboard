@@ -1,0 +1,86 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 8px;
+
+  /* Breakpoints */
+  --phone-small: 640px;
+	--phone: 768px;
+	--tablet: 1024px;
+	--desktop-small: 1200px;
+	--desktop-medium: 1449px;
+	--desktop-large: 1800px;
+	--desktop-xlarge: 1920px;
+
+  /* Colors */
+  --color-primary:        #30107D;
+  --color-primarylighter: #401A9B;
+  --color-lightgreen:     #06D6A2;
+  --color-lightred:       #DB3766;
+
+  /* Gray scale */
+  --color-white:          #fff;
+  --color-lightgray:      #F1F5F8;
+  --color-gray:           #B9B9B9;
+  --color-darkgray:       #4E5555;
+
+  /* Colors for elements */
+  --background-main:        var(--color-lightgray);
+  --background-header:      var(--color-primary);
+  --font-color-main:        var(--color-darkgray);
+
+  /* Font size */
+  --font-size-xl:           42px;
+  --font-size-lg:           24px;
+  --font-size-md:           18px;
+  --font-size-sm:           16px;
+  --font-size-xs:           14px;
+
+  /* Transition */
+  --ease-in-out:            0.3s all ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--color-darkgray);
+  background-color: var(--color-lightgray);
+  font-size: var(--font-size-md);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1226px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// Buttons
+.button { 
+  padding: 15px 52px;
+  font-size: var(--font-size-sm);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--ease-in-out);
+}
+
+// Modal
+.modal_create_transaction_show {
+  display: flex !important;
+}

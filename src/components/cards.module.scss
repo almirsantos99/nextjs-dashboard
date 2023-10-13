@@ -1,0 +1,43 @@
+.card {
+    max-width: 32.5%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--color-white);
+    padding: 22px 34px;
+    word-break: break-word;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &[data-type=balance] {
+        background-color: var(--color-lightgreen);
+        color: var(--color-white);
+    }
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+
+        .card_title {
+            font-size: var(--font-size-lg);
+            display: inline-block;
+            padding-bottom: 35px;
+        }
+
+        .card_icon {
+            text-align: right;
+        }
+    }
+
+    &_value {
+        font-size: var(--font-size-xl);
+        font-weight: 500;
+        letter-spacing: -0.3px;
+
+        @media (max-width: 1200px) {
+            font-size: var(--font-size-lg);
+        }
+    }
+}
